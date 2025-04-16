@@ -1,0 +1,20 @@
+# Arquivos compilados
+target/
+*.class
+
+# Arquivos do IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Arquivos do sistema
+.DS_Store
+
+# Arquivos de dependência reduzidos
+dependency-reduced-pom.xml
+
+# Logs
+*.log

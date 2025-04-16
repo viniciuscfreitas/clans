@@ -1,0 +1,88 @@
+# Configurações do PrimeLeagueClans
+
+# Configurações do Banco de Dados
+database:
+  type: sqlite # sqlite ou mysql
+  sqlite:
+    file: clans.db
+  mysql:
+    host: localhost
+    port: 3306
+    database: primeleagueclans
+    username: root
+    password: root
+    table-prefix: plc_
+
+# Configurações de Cache
+cache:
+  enabled: true
+  expire-time: 300 # segundos
+  max-size: 1000 # número máximo de clãs em cache
+
+# Configurações de Economia
+economy:
+  initial-balance: 0.0
+  min-deposit: 100.0
+  min-withdraw: 100.0
+  max-withdraw-percentage: 50 # porcentagem máxima que pode ser retirada por vez
+
+# Configurações de Clã
+clan:
+  min-name-length: 3
+  max-name-length: 32
+  min-members: 2
+  max-members: 50
+  max-allies: 5
+  max-enemies: 5
+  max-sub-leaders: 3
+  creation-cost: 1000.0
+  rename-cost: 5000.0
+  tag-enabled: true
+  tag-min-length: 3
+  tag-max-length: 3
+
+# Configurações de Logs
+logging:
+  enabled: true
+  log-to-console: true
+  log-to-file: true
+  max-log-size: 10 # MB
+  max-log-files: 5
+  log-format: "[%date%] %action% - %player%: %details%"
+
+# Configurações de Performance
+performance:
+  async-operations: true
+  batch-updates: true
+  batch-size: 100
+  save-interval: 300 # segundos
+
+# Configurações de Segurança
+security:
+  max-invites-per-minute: 5
+  max-actions-per-minute: 10
+  prevent-duplicate-clans: true
+  prevent-duplicate-members: true
+  require-confirmation-for:
+    - delete
+    - kick
+    - promote
+    - demote
+    - ally
+    - enemy
+
+# Configurações de Notificações
+notifications:
+  action-bar:
+    enabled: true
+    duration: 3 # segundos
+  title:
+    enabled: true
+    duration: 3 # segundos
+  sound:
+    enabled: true
+    volume: 1.0
+    pitch: 1.0 
+
+# Configurações de Debug
+debug: false # Ativar/desativar modo debug 

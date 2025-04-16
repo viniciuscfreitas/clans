@@ -1,0 +1,48 @@
+name: PrimeLeagueClans
+version: 1.0
+main: com.seuservidor.primeleagueclans.PrimeLeagueClans
+api-version: 1.5.2
+description: Plugin de clãs para o servidor PrimeLeague
+commands:
+  clan:
+    description: Comando principal do sistema de clãs
+    usage: /clan <subcomando>
+    aliases: [c]
+  elo:
+    description: Gerencia o sistema de elo
+    aliases: [rating]
+permissions:
+  primeleagueclans.admin.*:
+    description: Permissão para todos os comandos administrativos
+    default: op
+    children:
+      primeleagueclans.admin.debug: true
+      primeleagueclans.admin.reload: true
+      primeleagueclans.admin.clearlogs: true
+      primeleagueclans.elo.admin: true
+  primeleagueclans.clan.*:
+    description: Permissão para todos os comandos de clã
+    default: true
+    children:
+      primeleagueclans.clan.criar: true
+      primeleagueclans.clan.deletar: true
+      primeleagueclans.clan.info: true
+      primeleagueclans.clan.convidar: true
+      primeleagueclans.clan.entrar: true
+      primeleagueclans.clan.aceitar: true
+      primeleagueclans.clan.sair: true
+      primeleagueclans.clan.expulsar: true
+      primeleagueclans.clan.promover: true
+      primeleagueclans.clan.rebaixar: true
+      primeleagueclans.clan.aliado: true
+      primeleagueclans.clan.inimigo: true
+      primeleagueclans.clan.banco: true
+      primeleagueclans.clan.top: true
+      primeleagueclans.clan.estatisticas: true
+      primeleagueclans.clan.registros: true
+      primeleagueclans.clan.config: true
+      primeleagueclans.clan.versao: true
+      primeleagueclans.clan.limparcache: true
+  primeleagueclans.elo.admin:
+    description: Permite gerenciar o sistema de elo
+    default: op

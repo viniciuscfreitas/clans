@@ -1,0 +1,315 @@
+# Configurações Gerais
+prefix: '&6[PrimeLeagueClans] &r'
+no-permission: '&c[!] &cVocê não tem permissão para usar este comando!'
+player-only: '&c[!] &cEste comando só pode ser executado por jogadores!'
+invalid-amount: '&c[!] &cQuantia inválida!'
+invalid-player: '&c[!] &cJogador não encontrado!'
+invalid-clan: '&c[!] &cClã não encontrado!'
+player-offline: '&c[!] &cEste jogador está offline!'
+plugin-reloaded: '&a[+] &aPlugin recarregado com sucesso!'
+command-error: '&c[!] &cOcorreu um erro ao executar o comando!'
+logs-cleared: '&a[+] &aLogs do clã &f<clan> &alimpos com sucesso!'
+clan-not-found: '&c[!] &cClã não encontrado!'
+target-not-found: '&c[!] &cClã alvo não encontrado!'
+amount-must-be-positive: '&c[!] &cA quantia deve ser positiva!'
+insufficient-points: '&c[!] &cPontos insuficientes!'
+invalid-action: '&c[!] &cAção inválida!'
+
+# Mensagens de Erro
+error.no-permission: '&c[!] &cVocê não tem permissão!'
+error.player-only: '&c[!] &cApenas jogadores podem usar este comando!'
+error.command-error: '&c[!] &cErro ao executar o comando!'
+error.clan-not-found: '&c[!] &cClã não encontrado!'
+
+# Mensagens de Ajuda
+help.header: '&6=== Ajuda do PrimeLeagueClans ==='
+help.format: '&e/clan %command% &7- &f%description%'
+help.footer: '&6====================='
+
+# Comandos de Ajuda
+help.commands.accept: '&cUso: &e/clan aceitar <clã>'
+help.commands.ally: '&cUso: &e/clan ally <clã> [aceitar|recusar|remover]'
+help.commands.bank: '&cUso: &e/clan bank <depositar|sacar> <quantia>'
+help.commands.clearcache: '&cUso: &e/clan clearcache'
+help.commands.config: '&cUso: &e/clan config <tag|desc|pvp> <valor>'
+help.commands.create: '&cUso: &e/clan criar <nome...> <tag>'
+help.commands.debug: '&cUso: &e/clan debug'
+help.commands.decline: '&cUso: &e/clan recusar <clã>'
+help.commands.demote: '&cUso: &e/clan demote <jogador>'
+help.commands.enemy: '&cUso: &e/clan enemy <clã>'
+help.commands.info: '&cUso: &e/clan info [clã]'
+help.commands.invite: '&cUso: &e/clan convidar <jogador>'
+help.commands.join: '&cUso: &e/clan entrar <tag>'
+help.commands.kick: '&cUso: &e/clan kick <jogador>'
+help.commands.leave: '&cUso: &e/clan sair'
+help.commands.limparlogs: '&cUso: &e/clan limparlogs <clã>'
+help.commands.logs: '&cUso: &e/clan logs [página]'
+help.commands.neutral: '&cUso: &e/clan neutral <clã>'
+help.commands.points: '&cUso: &e/clan points <add|remove> <quantia>'
+help.commands.promote: '&cUso: &e/clan promote <jogador>'
+help.commands.setdescription: '&cUso: &e/clan setdesc <descrição...>'
+help.commands.setname: '&cUso: &e/clan setname <novo-nome>'
+help.commands.settag: '&cUso: &e/clan settag <nova-tag>'
+help.commands.stats: '&cUso: &e/clan stats [clã]'
+help.commands.transfer: '&cUso: &e/clan transfer <jogador>'
+help.commands.rename: '&cUso: &e/clan rename <novo-nome>'
+help.commands.tag: '&cUso: &e/clan tag <nova-tag>'
+help.commands.entrar: '&cUso: &e/clan entrar <tag>'
+
+# Mensagens de Clã - Criação
+clan.created: '&a[+] &aClã &f<clan_name> &acriado com sucesso!'
+clan.created-broadcast: '&a[+] &aO clã &f<clan_name> &afoi criado por &f<player>&a!'
+clan.already-exists: '&c[!] &cJá existe um clã com este nome!'
+clan.tag-taken: '&c[!] &cJá existe um clã com esta tag!'
+clan.name-taken: '&c[!] &cJá existe um clã com este nome!'
+clan.name-invalid: '&c[!] &cNome de clã inválido! Use apenas letras, números e espaços.'
+clan.tag-invalid: '&c[!] &cTag de clã inválida! Use apenas letras e números.'
+clan.invalid-name-length: '&c[!] &cO nome do clã deve ter entre &e3 &ce &e32 &ccaracteres!'
+clan.invalid-tag-length: '&c[!] &cA tag do clã deve ter exatamente &e3 &ccaracteres!'
+clan.invalid-name-chars: '&c[!] &cO nome do clã só pode conter letras, números e espaços!'
+clan.invalid-tag-chars: '&c[!] &cA tag do clã só pode conter letras e números!'
+clan.insufficient-funds: '&c[!] &cVocê precisa de &e$<value> &cpara criar um clã!'
+clan.name-length: '&c[!] &cO nome do clã deve ter entre 3 e 16 caracteres!'
+clan.tag-length: '&c[!] &cA tag do clã deve ter exatamente 3 caracteres!'
+clan.name-success: '&a[+] &aNome do clã alterado para: &f<value>'
+clan.tag-success: '&a[+] &aTag do clã alterada para: &f<value>'
+
+# Mensagens de Clã - Gerenciamento
+clan.not-leader: '&c[!] &cVocê não é o líder deste clã!'
+clan.not-in-clan: '&c[!] &cVocê não está em nenhum clã!'
+clan.already-in-clan: '&c[!] &cVocê já está em um clã!'
+clan.player-already-in-clan: '&c[!] &cEste jogador já está em um clã!'
+clan.player-not-in-clan: '&c[!] &cEste jogador não está em nenhum clã!'
+clan.member-joined: '&a[+] &f<player> &aentrou para o clã!'
+clan.member-left: '&c[-] &f<player> &csaiu do clã!'
+clan.member-kicked: '&c[-] &f<player> &cfoi expulso do clã!'
+clan.leadership-transferred: '&a[+] &aLiderança transferida para &f<player>&a!'
+clan.leadership-received: '&a[+] &aVocê recebeu a liderança do clã &f<clan>&a!'
+clan.no-invite: '&c[!] &cVocê não tem convite pendente deste clã!'
+clan.invite-sent: '&a[+] &aConvite enviado para &f<player>&a!'
+clan.invite-received: '&a[+] &aVocê recebeu um convite do clã &f<clan> &ade &f<leader>&a. Use &e/clan entrar <clan> &apara aceitar!'
+clan.invite-denied: '&c[!] &cVocê recusou o convite do clã &f<clan>&c!'
+clan.joined: '&a[+] &aVocê entrou para o clã &f<clan>&a!'
+clan.left: '&c[-] &cVocê saiu do clã &f<tag>&c!'
+clan.kicked-player: '&c[-] &cVocê expulsou &f<player> &cdo clã!'
+clan.you-were-kicked: '&c[-] &cVocê foi expulso do clã &f<clan> &cpor &f<player>&c!'
+clan.leader-cannot-leave: '&c[!] &cVocê é o líder! Use /clan deletar para excluir o clã.'
+clan.no-clans: '&c[!] &cNão há clãs registrados!'
+clan.full: '&c[!] &cEste clã está cheio!'
+clan.player-has-invite: '&c[!] &cEste jogador já tem um convite pendente!'
+clan.declined: '&c[!] &cVocê recusou o convite do clã &f<clan>&c!'
+clan.deleted: '&a[+] &aClã &f<clan> &adeletado com sucesso!'
+clan.cannot-kick-leader: '&c[!] &cVocê não pode expulsar o líder do clã!'
+clan.no-logs: '&c[!] &cNão há logs para este clã!'
+clan.not-found: '&c[!] &cClã não encontrado!'
+clan.member-joined-broadcast: '&a[+] &f<player> &aentrou para o clã!'
+
+# Mensagens de Clã - Informações
+clan.info.header: '&6=== Informações do Clã &f<clan> ==='
+clan.info.tag: '&eTAG: &f<value>'
+clan.info.leader: '&eLÍDER: &f<value>'
+clan.info.level: '&eNÍVEL: &f<value>'
+clan.info.xp: '&eXP: &f<value>'
+clan.info.points: '&ePONTOS: &f<value>'
+clan.info.kills: '&eABATES: &f<value>'
+clan.info.deaths: '&eMORTES: &f<value>'
+clan.info.kdr: '&eK/D: &f<value>'
+clan.info.bank: '&eBANCO: &f$<value>'
+clan.info.members-header: '&eMEMBROS:'
+clan.info.member-leader: '&f> &c<player> &7(Líder)'
+clan.info.member: '&f> &7<player>'
+clan.info.allies-header: '&eALIADOS:'
+clan.info.ally: '&f> &a<clan>'
+clan.info.enemies-header: '&eINIMIGOS:'
+clan.info.enemy: '&f> &c<clan>'
+clan.info.footer: '&6====================='
+
+# Mensagens de Clã - Alianças e Inimigos
+clan.cannot-ally-self: '&c[!] &cVocê não pode se aliar com seu próprio clã!'
+clan.already-allies: '&c[!] &cVocê já é aliado deste clã!'
+clan.cannot-ally-enemy: '&c[!] &cVocê não pode se aliar com um clã inimigo!'
+clan.ally-invite-sent: '&a[+] &aConvite de aliança enviado para o clã &f<clan>&a!'
+clan.no-ally-request: '&c[!] &cEste clã não enviou pedido de aliança!'
+clan.ally-accepted: '&a[+] &aAliança formada com o clã &f<clan>&a!'
+clan.ally-declined: '&c[!] &cAliança recusada com o clã &f<clan>&c!'
+clan.ally-removed: '&c[-] &cAliança removida com o clã &f<clan>&c!'
+clan.not-allies: '&c[!] &cVocê não é aliado deste clã!'
+clan.cannot-enemy-self: '&c[!] &cVocê não pode declarar guerra contra seu próprio clã!'
+clan.already-enemy: '&c[!] &cVocê já está em guerra com este clã!'
+clan.enemy-declared: '&c[!] &cGuerra declarada contra o clã &f<clan>&c!'
+clan.cannot-neutral-self: '&c[!] &cVocê não pode declarar neutralidade com seu próprio clã!'
+clan.neutral-declared: '&a[+] &aPaz declarada com o clã &f<clan>&a!'
+
+# Mensagens de Clã - Banco
+clan.bank.invalid-amount: '&c[!] &cQuantia inválida!'
+clan.bank.insufficient-funds: '&c[!] &cVocê não tem dinheiro suficiente!'
+clan.bank.insufficient-clan-funds: '&c[!] &cO clã não tem dinheiro suficiente!'
+clan.bank.deposited: '&a[+] &aVocê depositou &f$<amount> &ano banco do clã!'
+clan.bank.withdrawn: '&a[+] &aVocê sacou &f$<amount> &ado banco do clã!'
+clan.bank.balance: '&e[$] &eSaldo do banco: &f$<amount>'
+clan.bank.deposit-usage: '&cUso: &e/clan bank depositar <quantia>'
+clan.bank.withdraw-usage: '&cUso: &e/clan bank sacar <quantia>'
+
+# Mensagens de Clã - Promoção/Demoção
+clan.not-subleader: '&c[!] &cEste jogador não é sub-líder!'
+clan.already-subleader: '&c[!] &cEste jogador já é sub-líder!'
+clan.cannot-promote-leader: '&c[!] &cVocê não pode promover o líder!'
+clan.promote-success: '&a[+] &aVocê promoveu &f<player> &apara sub-líder!'
+clan.you-were-promoted: '&a[+] &aVocê foi promovido a sub-líder no clã &f<clan>&a!'
+clan.cannot-demote-leader: '&c[!] &cVocê não pode rebaixar o líder!'
+clan.demote-success: '&a[+] &aVocê rebaixou &f<player> &apara membro!'
+clan.you-were-demoted: '&c[-] &cVocê foi rebaixado para membro no clã &f<clan>&c!'
+
+# Mensagens de Clã - Configuração
+clan.current-tag: '&e[*] &eTag atual: &f<value>'
+clan.tag-changed: '&a[+] &aTag alterada para: &f<value>'
+clan.current-description: '&e[*] &eDescrição atual: &f<value>'
+clan.description-changed: '&a[+] &aDescrição alterada para: &f<value>'
+clan.home-set: '&a[+] &aBase do clã definida!'
+clan.current-pvp: '&e[*] &ePvP atual: &f<value>'
+clan.pvp-changed: '&a[+] &aPvP alterado para: &f<value>'
+clan.invalid-setting: '&c[!] &cConfiguração inválida!'
+clan.description-too-long: '&c[!] &cDescrição muito longa!'
+clan.description-success: '&a[+] &aDescrição alterada com sucesso!'
+clan.no-permission-description: '&c[!] &cVocê não tem permissão para alterar a descrição!'
+clan.no-permission-points: '&c[!] &cVocê não tem permissão para gerenciar pontos!'
+
+# Mensagens de Clã - Logs
+clan.logs.header: '&6=== Logs do Clã &f<clan> ==='
+clan.logs.format: '&7[%date%] &f%action% - %player%: %details%'
+clan.logs.footer: '&6====================='
+
+# Mensagens de Clã - Ranking/Stats
+clan.ranking.header: '&6=== Ranking de Clãs ==='
+clan.ranking.format: '&e#<position>. &f<clan> &7- &f<points> pontos'
+clan.ranking.footer: '&6====================='
+
+clan.rank.header: '&6=== Top Clãs ==='
+clan.rank.format: '&e#<position>. &f<clan> &7- &f<kills> abates'
+clan.rank.footer: '&6====================='
+
+clan.stats.header: '&6=== Estatísticas do Clã &f<clan> ==='
+clan.stats.tag: '&eTAG: &f<value>'
+clan.stats.leader: '&eLÍDER: &f<value>'
+clan.stats.level: '&eNÍVEL: &f<value>'
+clan.stats.xp: '&eXP: &f<value>'
+clan.stats.points: '&ePONTOS: &f<value>'
+clan.stats.kills: '&eABATES: &f<value>'
+clan.stats.deaths: '&eMORTES: &f<value>'
+clan.stats.kdr: '&eK/D: &f<value>'
+clan.stats.bank: '&eBANCO: &f$<value>'
+clan.stats.members: '&eMEMBROS: &f<value>'
+clan.stats.allies: '&eALIADOS: &f<value>'
+clan.stats.enemies: '&eINIMIGOS: &f<value>'
+
+# Mensagens de Clã - Lista
+clan.list.header: '&6=== Lista de Clãs ==='
+clan.list.content: '&f<clans>'
+clan.list.footer: '&6====================='
+
+# Mensagens de Pontos
+clan.points-added: '&a[+] &aAdicionados &f<amount> &apontos ao clã!'
+clan.points-removed: '&c[-] &cRemovidos &f<amount> &cpontos do clã!'
+
+# Mensagens de Versão
+version.header: '&6=== PrimeLeagueClans ==='
+version.name: '&eNome: &f<value>'
+version.version: '&eVersão: &f<value>'
+version.author: '&eAutor: &f<value>'
+version.description: '&eDescrição: &f<value>'
+version.footer: '&6====================='
+
+# Mensagens Administrativas
+admin.cache-cleared: '&a[+] &aCache limpo com sucesso!'
+admin.debug-enabled: '&a[+] &aDebug ativado!'
+admin.debug-disabled: '&c[-] &cDebug desativado!'
+
+# Mensagens de Combate
+combat.cannot-attack-allies: '&c[!] &cVocê não pode atacar membros de clãs aliados!'
+
+# Mensagens de Boas-vindas
+welcome-back: '&a[+] &aBem-vindo de volta ao clã &f<clan>&a!'
+
+# Comandos
+comandos:
+  # Comando de Ajuda
+  ajuda:
+    descricao: 'Exibe a lista de comandos disponíveis'
+    uso: '/clan ajuda [página]'
+  
+  # Comandos de Clã - Gerais
+  criar:
+    descricao: 'Cria um novo clã'
+    uso: '/clan criar <nome> <tag>'
+  deletar:
+    descricao: 'Deleta seu clã'
+    uso: '/clan deletar'
+  info:
+    descricao: 'Mostra informações de um clã'
+    uso: '/clan info [clã]'
+  tag:
+    descricao: 'Altera a tag do seu clã'
+    uso: '/clan tag <nova-tag>'
+  desc:
+    descricao: 'Altera a descrição do seu clã'
+    uso: '/clan desc <descricao>'
+  
+  # Comandos de Clã - Membros
+  entrar:
+    descricao: 'Entra em um clã (após convite)'
+    uso: '/clan entrar <tag>'
+  sair:
+    descricao: 'Sai do seu clã atual'
+    uso: '/clan sair'
+  convidar:
+    descricao: 'Convida um jogador para seu clã'
+    uso: '/clan convidar <jogador>'
+  expulsar:
+    descricao: 'Expulsa um membro do clã'
+    uso: '/clan expulsar <jogador>'
+  transferir:
+    descricao: 'Transfere a liderança do clã'
+    uso: '/clan transferir <jogador>'
+  promover:
+    descricao: 'Promove um membro a sub-líder'
+    uso: '/clan promover <jogador>'
+  rebaixar:
+    descricao: 'Rebaixa um sub-líder a membro'
+    uso: '/clan rebaixar <jogador>'
+  aceitar:
+    descricao: 'Aceita um convite de clã'
+    uso: '/clan aceitar <clã>'
+  recusar:
+    descricao: 'Recusa um convite de clã'
+    uso: '/clan recusar <clã>'
+  
+  # Comandos de Clã - Relações
+  aliado:
+    descricao: 'Gerencia alianças entre clãs'
+    uso: '/clan aliado <clã> [aceitar|recusar|remover]'
+  inimigo:
+    descricao: 'Declara inimizade a outro clã'
+    uso: '/clan inimigo <clã>'
+  neutro:
+    descricao: 'Declara neutralidade a um clã inimigo'
+    uso: '/clan neutro <clã>'
+  
+  # Comandos de Clã - Economia
+  banco:
+    descricao: 'Gerencia o banco do clã'
+    uso: '/clan banco <depositar|sacar> <quantia>'
+  
+  # Comandos de Clã - Admin
+  admin:
+    descricao: 'Comandos administrativos'
+    uso: '/clan admin <subcomando>'
+  pontos:
+    descricao: 'Gerencia pontos do clã'
+    uso: '/clan pontos <add|remove> <quantia>'
+  definirpvp:
+    descricao: 'Configura o PvP entre membros'
+    uso: '/clan definirpvp <true|false>'
+
+# Novas mensagens de Clã - Convites
+clan.invite-expired: '&c[!] &cO convite do clã &f<clan> &cexpirou!'
+clan.invite-expired-leader: '&c[!] &cSeu convite para &f<player> &cexpirou!' 
